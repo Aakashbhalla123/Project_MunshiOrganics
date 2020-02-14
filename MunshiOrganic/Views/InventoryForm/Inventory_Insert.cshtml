@@ -1,0 +1,144 @@
+﻿@model MunshiModels.Models.InventoryModel
+
+@{
+    ViewBag.Title = "Inventory_Insert";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+
+<div class="alert alert-danger alert-dismissible" id="errorMessage" style="display:none">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong id="spnerrorMessage"></strong>
+</div>
+
+<section class="content-header">
+    <h1>
+        Farmer Entry Model
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>Inventory</a></li>
+        <li class="active">Add Farmer Entry</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Add Farmer Entry </h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                @using (Html.BeginForm("Inventory_Insert", "InventoryForm", FormMethod.Post))
+                {
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.CreatedDate, "दिनांक", new { @for = "ProcessName", @align = "left" })
+                                @Html.TextBoxFor(x=> x.Current,new {@for="CurrentDate", @readonly = "@readonly" })
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.HiddenFor(x => x.ReciptNo)
+                                @Html.LabelFor(x => x.ReciptNo, "रसीद संख्या", new { @for = "ReciptNo" })
+                                @if (Model.ReciptNo == null || Model.ReciptNo == 0)
+                                    {
+                                        @Html.TextBoxFor(x => x.NewReciptNo, new { @class = "form-control", @id = "ReciptNo,", @required = "required", @readonly = "@readonly" })
+                                }
+                                else
+                                {
+                                    @Html.TextBoxFor(x => x.ReciptNo, new { @class = "form-control", @id = "ReciptNo,", @required = "required", @readonly = "@readonly" })
+                                }
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.LoginId, "लॉगिन आईडी", new { @for = "LoginId" })
+                                @Html.TextBoxFor(x => x.LoginId, new { @class = "form-control", @id = "LoginId", @required = "required" })
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.PersonName, "व्यक्ति का नाम", new { @for = "PersonName" })
+                                @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control", @id = "PersonName", @required = "required" })
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.RawMaterial, "कच्चामाल", new { @for = "RawMaterial" })
+                                @Html.TextBoxFor(x => x.RawMaterial, new { @class = "form-control", @id = "RawMaterial", @required = "required" })
+
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.Quantity, "मात्र", new { @for = "Unit" })
+                                @Html.TextBoxFor(x => x.Quantity, new { @class = "form-control", @id = "Quantity", @required = "required" })
+                                @*1000 @Html.RadioButtonFor(x => x.Quantity, "1000", new { @class = "radio-inline" })500@Html.RadioButtonFor(x => x.Quantity, "500", new { @class = "radio-inline" }) 250 @Html.RadioButtonFor(x => x.Quantity, "250", new { @class = "radio-inline" })*@
+
+
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.Unit, "इकाई", new { @for = "Unit" })
+                                @Html.TextBoxFor(x => x.Unit, new { @class = "form-control", @id = "Unit", @required = "required" })
+                                @*tones @Html.RadioButtonFor(x => x.Unit, "Tones", new { @class = "radio-inline,form-check-input" }) matric Tones @Html.RadioButtonFor(x => x.Unit, "50", new { @class = "radio-inline" })*@
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.Storage, "भंडारण", new { @for = "storage" })
+                                @Html.TextBoxFor(x => x.Storage, new { @class = "form-control", @id = "Unit", @required = "required" })
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                                <!-- /.box-body -->
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-success">@ViewBag.ButtonCaption</button>
+                        <button type="submit" id="Back" class="btn btn-danger">Cancel</button>
+                    </div>
+                }
+
+            </div>
+
+
+</section>
+
+<script>
+    $(document).ready(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2();
+
+        if ('@TempData["ReturnMessage"]' != null) {
+            var popupmessage = '@TempData["ReturnMessage"]';
+            if (popupmessage != '') {
+
+                $("#spnerrorMessage").html(popupmessage);
+                $("#errorMessage").show();
+                setTimeout(function () {
+                    $('#errorMessage').fadeOut('fast');
+                }, 2000);
+            }
+        }
+    });
+    $(function () {
+        $('.minimal').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' /* optional */
+        });
+    });
+
+    $(document).on('click', '#Back', function () {
+        document.location = '@Url.Action("Index", "ProcessMaster")';
+    });
+</script>
+
+
+

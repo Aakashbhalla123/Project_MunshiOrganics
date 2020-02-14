@@ -1,0 +1,89 @@
+﻿@model MunshiModels.Models.ProductMasterModel
+@{
+    ViewBag.Title = "ProcessInser_Update";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+<section class="content-header">
+    <h1>
+        PrductMasterModel
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>ProductMaster</a></li>
+        <li class="active">Add Product</li>
+    </ol>
+</section>
+<sction class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Add Product</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                @using (Html.BeginForm("ProductInser_Update", "ProductMaster", FormMethod.Post))
+                {
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.HiddenFor(x => x.Productid)
+                                @Html.LabelFor(x => x.ProductName, "ProductName", new { @for = "ProductName" })
+                                @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control", @id = "ProductName", @required = "required" })
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.UOM, "UOM", new { @for = "UOM" })
+                                @Html.DropDownListFor(x => x.UOM, new SelectList(ViewBag.UOm as System.Collections.IEnumerable, "UOMId", "UOMName"), "--Select--", new { @class = "form-control select2", @style = "width:100%;" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.Color, "Color", new { @for = "Productid" })
+                                @Html.DropDownListFor(x => x.Color, new SelectList(ViewBag.color as System.Collections.IEnumerable, "GeneralMasterId", "GeneralMasterName"), "--Select--", new { @class = "form-control select2", @style = "width:100%;" })
+
+
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.Texture, "Texture", new { @for = "Texture" })
+                                @Html.DropDownListFor(x => x.Texture, new SelectList(ViewBag.texture as System.Collections.IEnumerable, "GeneralMasterId", "GeneralMasterName"), "--Select--", new { @class = "form-control select2", @style = "width:100%;" })
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.ProcessId, "ProcessId", new { @for = "ProcessId", @multiple = "multiple" })
+                                @Html.DropDownListFor(x => x.ProcessIds, new SelectList(ViewBag.Process as System.Collections.IEnumerable, "ProcessId", "ProcessName"), "--Select--", new { @class = "form-control select2", @style = "width:100%;", @multiple = "multiple" })
+                            </div>
+
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.BuyProductPacking, "Product Packing", new { @for = "BuyProductPacking" })
+                                @Html.DropDownListFor(x => x.BuyProductPacking, new SelectList(ViewBag.Packing as System.Collections.IEnumerable, "GeneralMasterId", "GeneralMasterName"), "--select--", new { @class = "form-control select2", @style = "width:100%;" })
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <button type="submit" class="btn btn-primary">@ViewBag.ButtonCaption</button>
+                            <button type="button" id="Back" class="btn btn-default">Cancel</button>
+                        </div>
+
+
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+
+        });
+    </script>
+
+

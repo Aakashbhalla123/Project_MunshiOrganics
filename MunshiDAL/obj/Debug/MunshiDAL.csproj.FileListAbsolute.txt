@@ -1,0 +1,35 @@
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\bin\Debug\MunshiDAL.dll
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\bin\Debug\MunshiDAL.pdb
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.csprojAssemblyReference.cache
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.StringResource.resources
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.csproj.GenerateResource.cache
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.csproj.CoreCompileInputs.cache
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.dll
+E:\MunshiAPI\MunshiAPI\MGAuctionDAL\obj\Debug\MunshiDAL.pdb
+E:\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.dll
+E:\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.pdb
+E:\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.StringResource.resources
+E:\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.csproj.GenerateResource.cache
+E:\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.csproj.CoreCompileInputs.cache
+E:\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.dll
+E:\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.StringResource.resources
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.csproj.GenerateResource.Cache
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.csprojResolveAssemblyReference.cache
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.dll
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\bin\Debug\MunshiDAL.pdb
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.StringResource.resources
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.csproj.GenerateResource.Cache
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.dll
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiDAL\obj\Debug\MunshiDAL.pdb
+F:\MunshiOrganicApplication\MunshiDAL\bin\Debug\MunshiDAL.dll
+F:\MunshiOrganicApplication\MunshiDAL\bin\Debug\MunshiDAL.pdb
+F:\MunshiOrganicApplication\MunshiDAL\obj\Debug\MunshiDAL.StringResource.resources
+F:\MunshiOrganicApplication\MunshiDAL\obj\Debug\MunshiDAL.csproj.GenerateResource.Cache
+F:\MunshiOrganicApplication\MunshiDAL\obj\Debug\MunshiDAL.dll
+F:\MunshiOrganicApplication\MunshiDAL\obj\Debug\MunshiDAL.pdb
+F:\MunshiOrganicApplication\MunshiDAL\obj\Debug\MunshiDAL.csprojResolveAssemblyReference.cache

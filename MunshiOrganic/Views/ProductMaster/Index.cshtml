@@ -1,0 +1,87 @@
+﻿
+@model IEnumerable<MunshiModels.Models.ProductMasterModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+<section class="content-header">
+    <h1>
+        ProductMasterList
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>ProcessMaster</a></li>
+        <li class="active">ProcessMaster List</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="@Url.Action("ProductInser_Update","ProductMaster")" class="btn btn-block btn-primary" style="width:7%;margin-bottom:1%;"><i class="fa fa-fw fa-plus"></i>@ViewBag.Add</a>
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">ProcessMaster List</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Productid</th>
+                                <th>ProductName </th>
+                                <th>UOM </th>
+                                <th>Color</th>
+                                <th>state</th>
+                                <th>Texture</th>
+                                
+                                <th>SafeLifeInGodown </th>
+                                
+                                <th>BuyProductId</th>
+                                <th>BuyProductPacking</th>
+                                <th>Catagory</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Productid</td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.UOM</td>
+                                    <td>@item.Color</td>
+                                    
+                                    <td>@item.SafeLifeInGodown</td>
+                                    
+                                    <td>@item.BuyProductId</td>
+                                    <td>@item.BuyProductPacking</td>
+                                    <td>@item.BuyProductPacking</td>
+                                    <td>@item.Catagory</td>
+                                   
+                                    <td>
+                                        <a href="@Url.Action("ProductInser_Update","ProductMaster",new {@Productid=item.Productid })">
+                                            <i class="fa fa-edit"></i>@ViewBag.Edit
+                                        </a>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $('#example1').DataTable()
+    })
+</script>
+
+
+
+

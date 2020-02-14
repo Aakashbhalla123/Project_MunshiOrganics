@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MunshiAPI", "MunshiApi\MunshiAPI.csproj", "{DD1DC886-A7C9-46BE-9DF8-D63DCD7939AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MunshiModels", "MunshiModels\MunshiModels.csproj", "{416307FD-9AA0-4D4A-A5F7-41CE6CA11D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MunshiDAL", "MunshiDAL\MunshiDAL.csproj", "{EBA29EF0-D53E-4E2B-B71B-A5E59908E1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MunshiOrganic", "MunshiOrganic\MunshiOrganic.csproj", "{B7705BD9-9F71-405B-8B18-60A57895A60B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD1DC886-A7C9-46BE-9DF8-D63DCD7939AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1DC886-A7C9-46BE-9DF8-D63DCD7939AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1DC886-A7C9-46BE-9DF8-D63DCD7939AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1DC886-A7C9-46BE-9DF8-D63DCD7939AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416307FD-9AA0-4D4A-A5F7-41CE6CA11D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416307FD-9AA0-4D4A-A5F7-41CE6CA11D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416307FD-9AA0-4D4A-A5F7-41CE6CA11D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416307FD-9AA0-4D4A-A5F7-41CE6CA11D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA29EF0-D53E-4E2B-B71B-A5E59908E1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA29EF0-D53E-4E2B-B71B-A5E59908E1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA29EF0-D53E-4E2B-B71B-A5E59908E1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA29EF0-D53E-4E2B-B71B-A5E59908E1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7705BD9-9F71-405B-8B18-60A57895A60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7705BD9-9F71-405B-8B18-60A57895A60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7705BD9-9F71-405B-8B18-60A57895A60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7705BD9-9F71-405B-8B18-60A57895A60B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

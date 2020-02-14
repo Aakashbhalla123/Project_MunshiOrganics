@@ -1,0 +1,101 @@
+﻿@model IEnumerable<MunshiModels.Models.InventoryModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+<div class="alert alert-success alert-dismissible" id="successmsg" style="display:none">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    <strong id="spnerrorMessage"></strong>
+</div>
+<section class="content-header">
+    <h1>
+        Farmer Entry Form
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>Farmer Entry</a></li>
+        <li class="active">FarmerEntry List</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="@Url.Action("Inventory_Insert","InventoryForm")" class="btn btn-block btn-primary" style="width:7%;margin-bottom:1%;"><i class="fa fa-fw fa-plus"></i>@ViewBag.Add</a>
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">FarmerEntryList List</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ReciptNo</th>
+                                <th>LoginId</th>
+                                <th>PersonName</th>
+                                <th>CreatedDate</th>
+                                <th>Unit</th>
+                                 <th>RawMaterial</th>
+                                <th>Storage</th>
+                                <th>Action</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ReciptNo</td>
+                                    <td>@item.LoginId</td>
+                                    <td>@item.PersonName</td>
+                                    
+                                    <td>@item.CreatedDate</td>
+                                    <td>@item.Unit</td>
+                                   
+                                    <td>@item.RawMaterial</td>
+                                    <td>@item.Storage</td>
+
+
+
+                                    <td>
+                                        <a href="@Url.Action("Inventory_Insert","InventoryForm",new {@ReciptNo=item.ReciptNo })">
+                                            <i class="fa fa-edit"></i>Edit
+                                        </a>
+                                    </td>
+                                   
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $('#example1').DataTable()
+    })
+
+    $(document).ready(function () {
+
+        if ('@TempData["ReturnMessage"]' != null) {
+            var popupmessage = '@TempData["ReturnMessage"]';
+            if (popupmessage != '') {
+
+                $("#spnerrorMessage").html(popupmessage);
+                $("#successmsg").show();
+                setTimeout(function () {
+                    $('#successmsg').fadeOut('fast');
+                }, 2000);
+            }
+        }
+
+    });
+</script>
+
+

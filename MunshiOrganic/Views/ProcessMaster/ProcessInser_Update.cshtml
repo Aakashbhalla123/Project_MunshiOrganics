@@ -1,0 +1,113 @@
+﻿@model MunshiModels.Models.ProcessMasterModel
+@{
+    ViewBag.Title = "ProcessInser_Update";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+<section class="content-header">
+    <h1>
+        ProcessMasterModel
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>ProcessMaster</a></li>
+        <li class="active">Add Process</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Add Process</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                @using (Html.BeginForm("ProcessInser_Update", "ProcessMaster", FormMethod.Post))
+                {
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.HiddenFor(x => x.ProcessId)
+                                @Html.LabelFor(x => x.ProcessName, "ProcessName", new { @for = "ProcessName" })
+                                @Html.TextBoxFor(x => x.ProcessName, new { @class = "form-control", @id = "ProcessName", @required = "required" })
+                            </div>
+                          
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                    @Html.LabelFor(x => x.ProcessVolume, "ProcessVolume", new { @for = "ProcessVolume" })
+                                    @Html.TextBoxFor(x => x.ProcessVolume, new { @class = "form-control", @id = "ProcessDuration", @required = "required" })
+                                    @Html.DropDownListFor(x => x.ProcessVolume, new SelectList(ViewBag.Volume as System.Collections.IEnumerable, "GeneralMasterId", "GeneralMasterName"), "--Select Volume --", new { @class = "form-control select2", @style = "width:100%;", @required = "required" })
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.ProcessDuration, "ProcessDuration", new { @for = "ProcessDuration" })
+                                @Html.TextBoxFor(x => x.ProcessDuration, new { @class = "form-control", @id = "ProcessDuration", @required = "required", @TYPE = "time" })
+                                @Html.DropDownListFor(x => x.ProcessDuration, new SelectList(ViewBag.duration as System.Collections.IEnumerable, "GeneralMasterId", "GeneralMasterName"), "--Select Duration --", new { @class = "form-control select2", @style = "width:100%;", @required = "required" })
+
+                            </div>
+                        </div>
+                       <br />
+                        <div class="row">
+                            <div class="col-xs-6">
+                                    @Html.LabelFor(x => x.WastageFlag, "WastageFlag", new { @for = "WastageFlag" })
+                                    @Html.CheckBoxFor(x => x.WastageFlag,new { @class="checkbox-inline"})
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                @Html.LabelFor(x => x.ByProduct, "ByProduct", new { @for = "ByProduct" })
+                                @Html.CheckBoxFor(x => x.ByProduct, new { @class = "checkbox-inline" })
+
+
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.LabelFor(x => x.QuantityFlag, "QuantityFlag", new { @for = "QuantityFlag" })
+                                @Html.CheckBoxFor(x=>x.QuantityFlag,new { @class = "checkbox-inline" })
+                            </div>
+                            <br />
+                            <div class="col-xs-6">
+                             
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                                <!-- /.box-body -->
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">@ViewBag.ButtonCaption</button>
+                        <button type="submit" id="Back" class="btn btn-default">Cancel</button>
+                    </div>
+                }
+
+            </div>
+           
+
+</section>
+    <!-- iCheck -->
+<script src="~/AdminLTE/plugins/iCheck/icheck.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2();
+
+    });
+    $(function () {
+        $('.minimal').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' /* optional */
+        });
+    });
+
+    $(document).on('click', '#Back', function () {
+        document.location = '@Url.Action("Index", "ProcessMaster")';
+    });
+</script>
+
+

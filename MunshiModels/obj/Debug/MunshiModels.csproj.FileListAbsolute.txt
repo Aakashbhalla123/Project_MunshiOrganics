@@ -1,0 +1,25 @@
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\bin\Debug\MunshiModels.dll
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\bin\Debug\MunshiModels.pdb
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\obj\Debug\MunshiModels.csprojAssemblyReference.cache
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\obj\Debug\MunshiModels.csproj.CoreCompileInputs.cache
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\obj\Debug\MunshiModels.dll
+E:\MunshiAPI\MunshiAPI\MGAuctionModels\obj\Debug\MunshiModels.pdb
+E:\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.dll
+E:\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.pdb
+E:\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.csproj.CoreCompileInputs.cache
+E:\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.dll
+E:\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.csprojResolveAssemblyReference.cache
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.dll
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiModels\obj\Debug\MunshiModels.pdb
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.dll
+F:\Munshi Organic\MunshiAPI\MunshiAPI\MunshiModels\bin\Debug\MunshiModels.pdb
+F:\MunshiOrganicApplication\MunshiModels\bin\Debug\MunshiModels.dll
+F:\MunshiOrganicApplication\MunshiModels\bin\Debug\MunshiModels.pdb
+F:\MunshiOrganicApplication\MunshiModels\obj\Debug\MunshiModels.dll
+F:\MunshiOrganicApplication\MunshiModels\obj\Debug\MunshiModels.pdb
+F:\MunshiOrganicApplication\MunshiModels\obj\Debug\MunshiModels.csprojResolveAssemblyReference.cache

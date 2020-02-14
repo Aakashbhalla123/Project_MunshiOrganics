@@ -1,0 +1,13 @@
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\bin\Debug\MGAuctionDAL.dll
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\bin\Debug\MGAuctionDAL.pdb
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.StringResource.resources
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.csproj.GenerateResource.Cache
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.dll
+D:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.pdb
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\bin\Debug\MGAuctionDAL.dll
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\bin\Debug\MGAuctionDAL.pdb
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.StringResource.resources
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.csproj.GenerateResource.Cache
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.dll
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.pdb
+E:\Projects\MGAuction\MGAuctionAPI\MGAuctionDAL\obj\Debug\MGAuctionDAL.csprojResolveAssemblyReference.cache

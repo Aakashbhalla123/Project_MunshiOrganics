@@ -1,0 +1,6 @@
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\bin\Release\MunshiDAL.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\bin\Release\MunshiDAL.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Release\MunshiDAL.StringResource.resources
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Release\MunshiDAL.csproj.GenerateResource.Cache
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Release\MunshiDAL.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiDAL\obj\Release\MunshiDAL.pdb

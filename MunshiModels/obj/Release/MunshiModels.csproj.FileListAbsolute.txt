@@ -1,0 +1,4 @@
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\bin\Release\MunshiModels.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\bin\Release\MunshiModels.pdb
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\obj\Release\MunshiModels.dll
+E:\Projects\CommonAPI\MunshiAPI\MunshiAPI\MunshiModels\obj\Release\MunshiModels.pdb
